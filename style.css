@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+.header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+}
+.sidebar a {
+    color: #ecf0f1;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.sidebar a:hover, .sidebar a.active {
+    background-color: #3498db;
+    border-left: 5px solid #ecf0f1;
+}
+.content {
+    padding: 20px;
+}
+.page {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.team-section {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #3498db;
+}
+.chart-container {
+    height: 400px;
+    margin-bottom: 30px;
+}
+.intro-image {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.municipio-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 100%;
+}
+.municipio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.municipio-header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.municipio-body {
+    padding: 15px;
+}
+.municipio-count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.municipio-locations {
+    margin-top: 10px;
+    font-size: 14px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto;
+        height: auto;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+
+
+.chart-container-wrapper {
+    margin-bottom: 30px;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.chart-canvas-container {
+    position: relative;
+    height: 300px; /* Altura fija para todas las gráficas */
+    width: 100%;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .chart-canvas-container {
+        height: 250px;
+    }
+}
+

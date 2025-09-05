@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas Estratégicas - Risaralda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Zonas WiFi Gratuitas en Risaralda</h1>
+        <p class="lead">Conectando comunidades a través del acceso gratuito a internet</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <div class="col-md-3 col-lg-2 sidebar">
+                <h4 class="text-center mb-4">Navegación</h4>
+                <a href="index.html">Introducción</a>
+                <a href="municipios.html">Zonas WiFi por Municipios</a>
+                <a href="graficas.html" class="active">Gráficas Estratégicas</a>
+                
+                <div class="team-section mt-5">
+                    <h5>Integrantes</h5>
+                    <p>Wilmer Perdano<br>Angela Garcia</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10 content">
+                <h2>Gráficas Estratégicas</h2>
+                <p>Análisis visual de datos sobre las zonas WiFi gratuitas en Risaralda.</p>
+                
+                <div class="row">
+                    <div class="col-md-6 chart-container-wrapper">
+                        <div class="chart-container">
+                            <h4>1. Gráfico de Barras - Cantidad por Municipio</h4>
+                            <div class="chart-canvas-container">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 chart-container-wrapper">
+                        <div class="chart-container">
+                            <h4>2. Gráfico de Torta - Distribución por Tipo de Zona</h4>
+                            <div class="chart-canvas-container">
+                                <canvas id="pieChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 chart-container-wrapper">
+                        <div class="chart-container">
+                            <h4>3. Gráfico de Dispersión - Zonas WiFi por Municipio</h4>
+                            <div class="chart-canvas-container">
+                                <canvas id="scatterChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 - Zonas WiFi Gratuitas Risaralda | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Renderizar gráficos cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', function() {
+            renderCharts();
+        });
+    </script>
+</body>
+</html>
